@@ -15,6 +15,7 @@ int main() {
 
     auto [valC, errC] = *resC;
 
+    std::cout << "3. Студент С (Інтерполяція Ньютона):\n";
     std::cout << "   - Значення: " << valC << "\n";
     std::cout << "   - Оцінка похибки: " << errC << "\n\n";
 

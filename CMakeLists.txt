@@ -11,4 +11,5 @@ add_executable(
     shared_types.h
     student_a.cpp
     student_b.cpp
+    student_c.cpp
 )
