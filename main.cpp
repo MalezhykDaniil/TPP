@@ -11,11 +11,10 @@ int main() {
         .x0 = 2.5
         });
 
-
     auto resB = calculateB(input);
     auto [valB, errB] = *resB;
 
-
+    std::cout << "2. Студент Б (Кубічний сплайн):\n";
     std::cout << "   - Значення: " << valB << "\n";
     std::cout << "   - Оцінка похибки: " << errB << "\n\n";
 
