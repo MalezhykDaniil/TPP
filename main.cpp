@@ -14,22 +14,20 @@ int main() {
         });
 
     auto resA = calculateA(input);
+    auto resB = calculateB(input);
+    auto resC = calculateC(input);
+
     auto [valA, errA] = *resA;
-  
+    auto [valB, errB] = *resB;
+    auto [valC, errC] = *resC;
+
     std::cout << "1. Студент А (Поліном Лагранжа):\n";
     std::cout << "   - Значення: " << valA << "\n";
     std::cout << "   - Оцінка похибки: " << errA << "\n\n";
 
-    auto resB = calculateB(input);
-    auto [valB, errB] = *resB;
-
     std::cout << "2. Студент Б (Кубічний сплайн):\n";
     std::cout << "   - Значення: " << valB << "\n";
     std::cout << "   - Оцінка похибки: " << errB << "\n\n";
-
-    auto resC = calculateC(input);
-
-    auto [valC, errC] = *resC;
 
     std::cout << "3. Студент С (Інтерполяція Ньютона):\n";
     std::cout << "   - Значення: " << valC << "\n";
