@@ -14,6 +14,7 @@ int main() {
     auto resA = calculateA(input);
     auto [valA, errA] = *resA;
   
+    std::cout << "1. Студент А (Поліном Лагранжа):\n";
     std::cout << "Значення: " << valA << "\n";
     std::cout << "Оцінка похибки: " << errA << "\n\n";
 
